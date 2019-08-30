@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 3,
+            "bonus_rolls":2,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:emerald",
+                    "weight": 2
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+#define CLICKED (id) execute as @a[scores={hasClickItem=$id,clicked=1..}] at @s run
+
+{{ CLICKED(5) }} execute as @a[distance=..10] at @s run particle minecraft:heart ~ ~2 ~ 0 0 0 5 100 force
+{{ CLICKED(5) }} effect give @a[distance=..10] minecraft:regeneration 1 4
+{{ CLICKED(5) }} effect give @s minecraft:hunger 1 100

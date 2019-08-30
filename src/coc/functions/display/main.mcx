@@ -1,0 +1,14 @@
+# プレイヤーの状態を表示
+
+#define LOOK_UP execute as @a[x_rotation=-90..-85,tag=!showStatus] run
+
+{{ LOOK_UP }} tellraw @s ["",{"text":"-----------------------------------------------------\nName:    ","color":"gold"},{"selector":"@s","color":"gold"}]
+
+#include coc:stats/display
+#include coc:mission/display
+
+{{ LOOK_UP }} tellraw @s ["",{"text":"-----------------------------------------------------", "color":"gold"}]
+
+
+{{ LOOK_UP }} tag @s add showStatus
+tag @a[x_rotation=-85..] remove showStatus

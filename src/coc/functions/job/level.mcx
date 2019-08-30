@@ -1,0 +1,8 @@
+# 現在の職業のレベルを反映
+
+#define JOB_ID_LIST [null, "fighter", "cultist", "sorcery", "doctor"]
+#define REFLECT (id) execute as @a[scores={job.no=$id}] run scoreboard players {{ $id ? "operation @s job.lvl = @s job." + JOB_ID_LIST[$id] + ".lvl" : "set @s job.lvl 0" }}
+
+#for i in [0..4]
+    {{ REFLECT($i) }}
+#endfor

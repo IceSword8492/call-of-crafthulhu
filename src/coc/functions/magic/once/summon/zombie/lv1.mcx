@@ -1,0 +1,5 @@
+#define CLICKED (id) execute as @a[scores={hasClickItem=$id,clicked=1..}] at @s run
+
+{{ CLICKED(2) }} particle minecraft:enchant ~ ~2 ~ 0 0 0 5 100 force
+{{ CLICKED(2) }} summon minecraft:zombie ~ ~2 ~ {Tags:["enemy"]}
+{{ CLICKED(2) }} effect give @s minecraft:hunger 1 100

@@ -1,0 +1,8 @@
+# 経験値からレベルを算出し、レベルが上がった際に経験値を0に戻す
+
+#define TARGET (id) execute as @a[scores={job.no=$id}] run
+
+{{ TARGET(1) }} scoreboard players operation @s tmp.exp = @s job.fighter.lvl
+{{ TARGET(1) }} scoreboard players operation @s tmp.exp *= Integer 100
+{{ TARGET(1) }} execute if score @s job.fighter.exp >= @s tmp.exp run scoreboard players add @s job.fighter.lvl 1
+{{ TARGET(1) }} execute if score @s job.fighter.exp >= @s tmp.exp run scoreboard players set @s job.fighter.exp 0

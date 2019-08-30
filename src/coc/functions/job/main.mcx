@@ -1,0 +1,6 @@
+#include coc:job/exp/fighter_main
+#include coc:job/exp/cultist_main
+#include coc:job/exp/sorcery_main
+#include coc:job/exp/doctor_main
+
+#include coc:job/level

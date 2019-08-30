@@ -1,0 +1,7 @@
+# プレイヤーの初期化
+
+#define INIT (objective, value) execute as @a[scores={init=0}] run scoreboard players set @s $objective $value
+
+{{ INIT("tutorial_level", 0) }}
+{{ INIT("mission.id", 1) }}
+{{ INIT("init", 1) }}

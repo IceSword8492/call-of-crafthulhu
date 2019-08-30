@@ -1,5 +1,6 @@
 # 死の呪文 lv.1
 # 対象がわけのわからないまま炎に包まれてしまう呪文。
+
 execute as @a[scores={hasClickItem=4,clicked=1..}] at @s run particle minecraft:crit ~ ~-.5 ~ 1 1 1 1.0 100
 execute as @a[scores={hasClickItem=4,clicked=1..}] at @s run execute as @e[tag=enemy,distance=..10] run data modify entity @s Fire set value 100
 execute as @a[scores={hasClickItem=4,clicked=1..}] at @s run execute as @e[tag=enemy,distance=..10] run data modify entity @s Fire set value 100

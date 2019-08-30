@@ -1,0 +1,4 @@
+#from coc:display/main
+
+execute as @a[x_rotation=-90..-85,tag=!showStatus] run execute if entity @s[scores={mission.id=1}] run tellraw @s [{"text": "Mission: 話を聞く", "color": "gold"}]
+execute as @a[x_rotation=-90..-85,tag=!showStatus] run execute if entity @s[scores={mission.id=2}] run tellraw @s [{"text": "Mission: 話を聞かない", "color": "gold"}]

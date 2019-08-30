@@ -1,0 +1,5 @@
+# main関数
+
+#include coc:display/main
+#include coc:job/main
+#include coc:magic/main

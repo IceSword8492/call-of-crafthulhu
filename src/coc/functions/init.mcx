@@ -1,0 +1,34 @@
+# ワールドの初期化
+
+#define ADD (objective) scoreboard objectives add $objective dummy
+
+{{ ADD("init") }}
+{{ ADD("tutorial_level") }}
+
+{{ ADD("level") }}
+{{ ADD("tmp.exp") }}
+{{ ADD("job.lvl") }}
+
+{{ ADD("job.no") }}
+{{ ADD("job.fighter.exp") }}
+{{ ADD("job.cultist.exp") }}
+{{ ADD("job.sorcery.exp") }}
+{{ ADD("job.doctor.exp") }}
+{{ ADD("job.fighter.lvl") }}
+{{ ADD("job.cultist.lvl") }}
+{{ ADD("job.sorcery.lvl") }}
+{{ ADD("job.doctor.lvl") }}
+
+{{ ADD("hasVillager") }}
+{{ ADD("hasClickedItem") }}
+{{ ADD("clicked") }}
+
+{{ ADD("1") }}
+{{ ADD("100") }}
+{{ ADD("1000") }}
+
+{{ ADD("magic.mp") }}
+{{ ADD("magic.mp.tmp") }}
+{{ ADD("magic.mp.max") }}
+
+{{ ADD("mission.id") }}
