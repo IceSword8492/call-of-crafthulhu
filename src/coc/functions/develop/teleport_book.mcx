@@ -1,0 +1,5 @@
+#define WORLDS [{display:"untiburiburimura",name:"untiburiburimura"},{display:"world",name:"world"},{display:"saltmouse",name:"saltmouse"},{display:"old_house",name:"old_house"},{display:"d_main1_1",name:"d_main1_1"}]
+
+
+
+give @p minecraft:written_book{title:"テレポ",author:"sharo",pages:["[{{ WORLDS.map(world => "{\\\"text\\\":\\\"" + world.display + "\\\\n\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"/mvtp " + world.name + "\\\"} }").join(","); }}]"]} 1
